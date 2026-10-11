@@ -1,0 +1,133 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Hasan's Portfolio</title>
+<meta name="description" content="Hasan — full-stack and systems developer based in Bahrain.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Kufi+Arabic:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<canvas id="tide" aria-hidden="true"></canvas><div class="glow" aria-hidden="true"></div>
+<div class="curtain" aria-hidden="true"></div>
+<div class="site" data-page="home">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" data-nav aria-label="Hasan, home">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-name">Hasan</span>
+      <span class="brand-ar" lang="ar">حسن</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="./" data-nav data-page="home">Home</a></li>
+      <li><a href="about.html" data-nav data-page="about">About</a></li>
+      <li><a href="projects.html" data-nav data-page="projects">Projects</a></li>
+      <li><a href="contact.html" data-nav data-page="contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy enter">
+      <span class="eyebrow">Full-stack &amp; systems developer · Bahrain</span>
+      <h1><span class="line">I build apps,</span><span class="line">games and the</span><span class="line sheen-text">systems under them.</span></h1>
+      <p class="hero-lede">I'm <strong>Hasan</strong>, a developer trained at <strong>Reboot Coding Institute</strong> and studying ICT Programming at <strong>Bahrain Polytechnic</strong>. I ship React Native and Next.js products, and I write Go and Rust when the problem gets close to the metal.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="projects.html" data-nav>See my projects <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="contact.html" data-nav>Get in touch</a>
+      </div>
+      <div class="coords"><span><i class="dot-live"></i>Open to full-stack roles</span><span>26.07°N 50.55°E</span><span>EN · <span lang="ar">عربي</span></span></div>
+    </div>
+    <div class="globe-stage" role="img" aria-label="My tech stack: Go, Rust, TypeScript, React Native, Next.js, Node.js, Express, Supabase, SQLite, WebSockets, Docker, GraphQL and more">
+      <div class="orbit" aria-hidden="true"></div>
+      <div class="core-fallback" aria-hidden="true"></div>
+      <canvas id="globe" aria-hidden="true"></canvas>
+      <div class="badge-layer" aria-hidden="true"></div>
+      <span class="drag-hint" aria-hidden="true">Drag to spin</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-label="Technologies">
+  <div class="marquee-track">
+    <span>Go</span><span>Rust</span><span>TypeScript</span><span>React Native</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>Supabase</span><span>WebSockets</span><span>Docker</span><span>GraphQL</span><span>SQLite</span><span>Go</span><span>Rust</span><span>TypeScript</span><span>React Native</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>Supabase</span><span>WebSockets</span><span>Docker</span><span>GraphQL</span><span>SQLite</span>
+  </div>
+</div>
+
+<section class="section intro">
+  <div class="wrap">
+    <figure class="photo-card" data-tilt="6" style="margin:0">
+      <span class="photo-ring" aria-hidden="true"></span>
+      <div class="photo-frame">
+        <img alt="Portrait of Hasan" hidden>
+        <div class="photo-empty">
+          <div class="monogram" aria-hidden="true">H</div>
+          <p>Your photo goes here. A portrait in 4:5 works best.</p>
+        </div>
+      </div>
+      <figcaption class="photo-meta">
+        <span><b>Hasan</b><small>Bahrain</small></span>
+        <button class="upload-btn" type="button">Add photo</button>
+        <input id="photo-input" type="file" accept="image/*" hidden>
+      </figcaption>
+    </figure>
+    <div class="intro-copy">
+      <span class="eyebrow">Hello</span>
+      <h2>From business studies to <span class="sheen-text">shipping code</span>.</h2>
+      <p>I came to software from a <strong>business background</strong>, which still shapes how I build: I care about who uses the product and what it has to earn. Reboot taught me to learn by shipping, with peer audits on every project. Bahrain Polytechnic added <strong>cybersecurity, cryptography and software engineering</strong>.</p>
+      <p>As a <strong>full-stack intern at Esbitar</strong> I worked across mobile, web dashboard and backend for a clinic management platform. On my own time I build party games for the gatherings I love.</p>
+      <div class="stats">
+        <div class="stat"><b data-count="15">15</b><span>projects shown here</span></div>
+        <div class="stat"><b data-count="3">3</b><span>core languages: Go, Rust, TS</span></div>
+        <div class="stat"><b data-count="2">2</b><span>industry roles</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Selected work</span>
+      <h2>A few things I've built</h2>
+      <p>One from each corner of what I do: a real product, a real-time game, and a systems tool.</p>
+    </div>
+    <div class="featured-grid">
+      <article class="card" data-tilt="7">
+  <div class="cover" style="--h:190"><span class="cover-glyph">▦</span><span class="status">Shipped</span><span class="cover-spec">3 repos · full stack</span></div>
+  <div class="card-body"><span class="card-kicker">Web · Internship</span><h3>Esbitar Dashboard</h3><p>The clinic-side web dashboard for Esbitar, built in Next.js on top of a Node.js/Express and Supabase API I contributed to across three repositories.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Supabase</span></div></div>
+</article>
+      <article class="card" data-tilt="7">
+  <div class="cover" style="--h:120"><span class="cover-glyph">▚</span><span class="status">Shipped</span><span class="cover-spec">~1,100 LOC · 50+ FPS target</span></div>
+  <div class="card-body"><span class="card-kicker">Multiplayer FPS</span><h3>Maze Wars</h3><p>A first-person maze shooter in Rust. A UDP server syncs players, the client renders with a mini-map and FPS counter, and mazes generate across three difficulty levels.</p><div class="chips"><span class="chip">Rust</span><span class="chip">UDP</span><span class="chip">Game loop</span></div></div>
+</article>
+      <article class="card" data-tilt="7">
+  <div class="cover" style="--h:22"><span class="cover-glyph ar" lang="ar">بيتنا</span><span class="status wip">In progress</span><span class="cover-spec">shared display · Arabic first</span></div>
+  <div class="card-body"><span class="card-kicker">Party game hub</span><h3>Baytna</h3><p>A multiplayer party game hub for family and friend gatherings on one shared screen. Rooms, sessions and players share one model, with each game plugging into a common interface.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">Supabase Realtime</span><span class="chip">TypeScript</span></div></div>
+</article>
+    </div>
+    <div class="btn-row" style="margin-top:28px"><a class="btn btn-ghost" href="projects.html" data-nav>All projects <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band" data-tilt="3">
+      <div>
+        <span class="eyebrow">Next step</span>
+        <h2 style="margin-top:14px">Have a role or a project in mind?</h2>
+        <p>I'm looking for full-stack and backend work in Bahrain and the Gulf. I reply in English or Arabic.</p>
+      </div>
+      <a class="btn btn-primary" href="contact.html" data-nav>Start a conversation <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Hasan · Built in Bahrain · 26.07°N 50.55°E</span>
+    <span><a href="./" data-nav>Home</a> · <a href="about.html" data-nav>About</a> · <a href="projects.html" data-nav>Projects</a> · <a href="contact.html" data-nav>Contact</a></span>
+  </div>
+</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="app.js"></script>
+
+</body></html>

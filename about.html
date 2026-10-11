@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About · Hasan</title>
+<meta name="description" content="Hasan — full-stack and systems developer based in Bahrain.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Kufi+Arabic:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="tide" aria-hidden="true"></canvas><div class="glow" aria-hidden="true"></div>
+<div class="curtain" aria-hidden="true"></div>
+<div class="site" data-page="about">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" data-nav aria-label="Hasan, home">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-name">Hasan</span>
+      <span class="brand-ar" lang="ar">حسن</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="./" data-nav data-page="home">Home</a></li>
+      <li><a href="about.html" data-nav data-page="about">About</a></li>
+      <li><a href="projects.html" data-nav data-page="projects">Projects</a></li>
+      <li><a href="contact.html" data-nav data-page="contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="wrap enter">
+    <span class="eyebrow">About</span>
+    <h1>Curious about <span class="sheen-text">how things work</span>, all the way down.</h1>
+    <p>I like the whole stack: the screen someone taps, the API behind it, and the network packets in between. Here's how I got here and what I work with.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:24px">
+  <div class="wrap about-grid">
+    <div class="prose">
+      <p>I studied <strong>business</strong> in secondary school, then found programming and never looked back. At <strong>Reboot Coding Institute</strong> I learned by building: no lectures, just projects reviewed by peers. That's where I wrote real-time servers in Go, containerised apps with Docker, and later picked up Rust for games and graphics.</p>
+      <p>Alongside Reboot I'm completing an <strong>ICT Programming degree at Bahrain Polytechnic</strong>, where my coursework leans into security: cryptography, digital forensics, risk management and intrusion detection.</p>
+      <p>I've worked on two products used by real customers: a <strong>laundry service marketplace</strong> at Exceeders, and the <strong>Esbitar</strong> clinic platform, where I built across mobile, web and backend as a full-stack intern.</p>
+      <p>Outside work I'm into social and party games, the kind that fill a living room at a family gathering. That's what pulled me into building <strong>Baytna</strong> and <strong>Seen Jeem</strong>.</p>
+    </div>
+    <dl class="facts">
+      <div class="fact"><dt>Based in</dt><dd>Bahrain</dd></div>
+      <div class="fact"><dt>Focus</dt><dd>Full-stack web &amp; mobile, backend systems, games</dd></div>
+      <div class="fact"><dt>Studying</dt><dd>ICT Programming, Bahrain Polytechnic</dd></div>
+      <div class="fact"><dt>Trained at</dt><dd>Reboot Coding Institute</dd></div>
+      <div class="fact"><dt>Languages</dt><dd>English · <span class="ar" lang="ar">العربية</span></dd></div>
+      <div class="fact"><dt>Looking for</dt><dd>Full-stack or backend roles in the Gulf</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Experience</span>
+      <h2>Where I've worked</h2>
+    </div>
+    <div class="timeline">
+      <article class="tl-item" data-tilt="3">
+        <div class="tl-top"><h3>Esbitar</h3><span class="tl-role">Full-stack developer intern</span></div>
+        <p>Mobile clinic management platform. I built React Native screens, pages for the Next.js web dashboard, and endpoints in the Node.js/Express and Supabase backend, working across all three repositories.</p>
+        <div class="chips"><span class="chip">React Native</span><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Supabase</span></div>
+      </article>
+      <article class="tl-item" data-tilt="3">
+        <div class="tl-top"><h3>Exceeders</h3><span class="tl-role">Developer</span></div>
+        <p>Built a laundry service marketplace that connects customers with laundry providers.</p>
+        <div class="chips"><span class="chip">Full stack</span><span class="chip">Marketplace</span></div>
+      </article>
+      <article class="tl-item" data-tilt="3">
+        <div class="tl-top"><h3>Reboot Coding Institute</h3><span class="tl-role">Developer program</span></div>
+        <p>Project-based training with peer audits: real-time forum, social network, GraphQL profile, wget clone, Rust games and a ray tracer.</p>
+        <div class="chips"><span class="chip">Go</span><span class="chip">Rust</span><span class="chip">Docker</span><span class="chip">GraphQL</span><span class="chip">JWT</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Toolkit</span>
+      <h2>What I build with</h2>
+    </div>
+    <div class="skills">
+      <div class="skill" data-tilt="8"><h3>Frontend <i>UI</i></h3><ul><li>React Native<span>mobile</span></li><li>Next.js<span>web</span></li><li>TypeScript<span>daily</span></li><li>SVG &amp; Chart.js<span>data viz</span></li></ul></div>
+      <div class="skill" data-tilt="8"><h3>Backend <i>API</i></h3><ul><li>Node.js / Express<span>REST</span></li><li>Go<span>servers</span></li><li>GraphQL<span>queries</span></li><li>JWT<span>auth</span></li></ul></div>
+      <div class="skill" data-tilt="8"><h3>Data &amp; realtime <i>I/O</i></h3><ul><li>Supabase<span>Postgres</span></li><li>SQLite<span>embedded</span></li><li>WebSockets<span>live</span></li><li>UDP<span>games</span></li></ul></div>
+      <div class="skill" data-tilt="8"><h3>Systems <i>OPS</i></h3><ul><li>Rust<span>games, rt</span></li><li>Docker<span>deploy</span></li><li>Linux &amp; networking<span>CLI</span></li><li>Concurrency<span>Go, Rust</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Security coursework</span>
+      <h2>Research &amp; study highlights</h2>
+      <p>Selected work from my Bahrain Polytechnic degree.</p>
+    </div>
+    <div class="study">
+      <div class="study-item"><code>IOT 432</code><h3>IoT intrusion detection</h3><p>Compared Random Forest and Decision Tree classifiers on CICIDS2017 and Bot-IoT, recomputing metrics from confusion matrices.</p></div>
+      <div class="study-item"><code>ITCY351</code><h3>Cryptographic hash functions</h3><p>Group research paper reviewing how hash functions work, where they fail, and how they're used.</p></div>
+      <div class="study-item"><code>ITCY460</code><h3>Risk management plan</h3><p>Risk assessment, mitigation, business impact analysis and continuity planning for a fintech case study.</p></div>
+      <div class="study-item"><code>ITCY354</code><h3>Secure software engineering</h3><p>UML class diagrams and data flow diagrams for a secure smart taxi pickup and parking system.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Hasan · Built in Bahrain · 26.07°N 50.55°E</span>
+    <span><a href="./" data-nav>Home</a> · <a href="about.html" data-nav>About</a> · <a href="projects.html" data-nav>Projects</a> · <a href="contact.html" data-nav>Contact</a></span>
+  </div>
+</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
