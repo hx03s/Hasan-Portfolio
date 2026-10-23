@@ -1,8 +1,10 @@
 /* ===== Edit these to personalise the site ===== */
 const CONFIG = {
-  photo: "",            // e.g. "photo.jpg" once you add your photo file next to the pages
+  // YOUR PHOTO: put your photo in the `images` folder as `me.jpg` (or change the path here).
+  // A portrait (about 4:5) looks best. Until the file exists, the "H" monogram shows instead.
+  photo: "images/me.jpg",
   email: "habdulla2903@gmail.com",
-  github: "",           // e.g. "https://github.com/your-username"
+  github: "https://github.com/hx03s",
   linkedin: ""          // e.g. "https://www.linkedin.com/in/your-handle"
 };
 
@@ -122,31 +124,13 @@ const STACK = [
     catch (err) { /* CSS fallback shape stays visible */ }
   }
 
-  /* ---- photo slot ---- */
+  /* ---- photo slot: shows CONFIG.photo, or the monogram if the file isn't there yet ---- */
   const frame = document.querySelector(".photo-frame");
-  if (frame) {
+  if (frame && CONFIG.photo) {
     const img = frame.querySelector("img");
     const empty = frame.querySelector(".photo-empty");
-    const input = document.getElementById("photo-input");
-    const btn = document.querySelector(".upload-btn");
-    const show = src => { img.src = src; img.hidden = false; empty.hidden = true; if (btn) btn.textContent = "Change photo"; };
-    let saved = null;
-    try { saved = localStorage.getItem("hasan-photo"); } catch (e) {}
-    if (CONFIG.photo) show(CONFIG.photo); else if (saved) show(saved);
-    if (btn && input) {
-      btn.addEventListener("click", () => input.click());
-      input.addEventListener("change", () => {
-        const f = input.files && input.files[0];
-        if (!f) return;
-        const rd = new FileReader();
-        rd.onload = () => {
-          show(rd.result);
-          try { localStorage.setItem("hasan-photo", rd.result); } catch (e) {}
-          toast("Photo added on this device");
-        };
-        rd.readAsDataURL(f);
-      });
-    }
+    img.onload = () => { img.hidden = false; empty.hidden = true; };
+    img.src = CONFIG.photo;
   }
 
   /* ---- counters ---- */
@@ -176,7 +160,7 @@ const STACK = [
       if (top) top.scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
     }));
     const hash = (location.hash || "").slice(1);
-    if (["mobile", "websites", "games", "tools"].includes(hash)) apply(hash);
+    if (["mobile", "websites", "games", "tools", "coursework"].includes(hash)) apply(hash);
   }
 
   /* ---- contact: links, copy, compose ---- */

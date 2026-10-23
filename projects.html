@@ -38,71 +38,151 @@
 </section>
 <div class="wrap">
   <div class="filters" role="toolbar" aria-label="Filter projects">
-    <button class="filter" type="button" data-filter="all" aria-pressed="true">All <sup>15</sup></button>
-    <button class="filter" type="button" data-filter="mobile" aria-pressed="false">Mobile <sup>02</sup></button>
-    <button class="filter" type="button" data-filter="websites" aria-pressed="false">Websites <sup>06</sup></button>
-    <button class="filter" type="button" data-filter="games" aria-pressed="false">Games <sup>04</sup></button>
-    <button class="filter" type="button" data-filter="tools" aria-pressed="false">Tools &amp; research <sup>03</sup></button>
+    <button class="filter" type="button" data-filter="all" aria-pressed="true">All <sup>40</sup></button>
+    <button class="filter" type="button" data-filter="mobile" aria-pressed="false">Mobile <sup>03</sup></button>
+    <button class="filter" type="button" data-filter="websites" aria-pressed="false">Websites <sup>11</sup></button>
+    <button class="filter" type="button" data-filter="games" aria-pressed="false">Games <sup>12</sup></button>
+    <button class="filter" type="button" data-filter="tools" aria-pressed="false">Tools &amp; research <sup>07</sup></button>
+    <button class="filter" type="button" data-filter="coursework" aria-pressed="false">Coursework &amp; practice <sup>07</sup></button>
   </div>
   <section class="cat" id="mobile">
-  <div class="cat-head"><h2>Mobile <small>02</small></h2><p>Cross-platform apps built with React Native.</p></div>
+  <div class="cat-head"><h2>Mobile <small>03</small></h2><p>Cross-platform apps built with React Native and Expo.</p></div>
   <div class="grid two"><article class="card" data-tilt="7">
   <div class="cover" style="--h:168"><span class="cover-glyph">Es</span><span class="status">Shipped</span><span class="cover-spec">iOS + Android · clinic ops</span></div>
   <div class="card-body"><span class="card-kicker">Mobile · Internship</span><h3>Esbitar Mobile</h3><p>Screens for Esbitar, a mobile clinic management platform. As a full-stack intern I built React Native screens wired to the shared Node.js and Supabase backend.</p><div class="chips"><span class="chip">React Native</span><span class="chip">TypeScript</span><span class="chip">Supabase</span></div></div>
 </article><article class="card" data-tilt="7">
-  <div class="cover" style="--h:32"><span class="cover-glyph">Al</span><span class="status wip">In progress</span><span class="cover-spec">in development</span></div>
-  <div class="card-body"><span class="card-kicker">Mobile + Web</span><h3>Albazar</h3><p>A web and mobile app currently in development. Case study coming soon.</p><div class="chips"><span class="chip">React Native</span><span class="chip">Next.js</span></div></div>
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/albazar-mobile.jpg" alt="AlBazar screenshot" loading="lazy"><span class="status wip">In testing</span><span class="cover-spec">4 repos · customer, vendor, admin, driver</span></div>
+  <div class="card-body"><span class="card-kicker">Mobile + Web · Marketplace</span><h3>AlBazar</h3><p>A multi-vendor marketplace for Bahrain, priced in dinars. A shopper app, a vendor and admin dashboard, and a Supabase database where row-level security decides who sees what, and placing an order is one all-or-nothing transaction.</p><div class="chips"><span class="chip">Expo</span><span class="chip">React Native</span><span class="chip">React</span><span class="chip">Supabase</span><span class="chip">Postgres</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/sharks-academy.jpg" alt="Sharks Academy screenshot" loading="lazy"><span class="status wip">In progress</span><span class="cover-spec">iOS + Android</span></div>
+  <div class="card-body"><span class="card-kicker">Mobile · Early stage</span><h3>Sharks Academy</h3><p>A mobile app and admin dashboard for running a swimming academy: swimmers, classes and coaches.</p><div class="chips"><span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">Next.js</span></div><div class="card-links"><span>Private repo</span></div></div>
 </article></div>
 </section>
   <section class="cat" id="websites">
-  <div class="cat-head"><h2>Websites <small>06</small></h2><p>Dashboards, marketplaces and real-time web apps.</p></div>
+  <div class="cat-head"><h2>Websites <small>11</small></h2><p>Stores, dashboards, platforms and real-time web apps.</p></div>
   <div class="grid"><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/coooki.jpg" alt="Coooki screenshot" loading="lazy"><span class="status">Live</span><span class="cover-spec">AR / EN · BenefitPay</span></div>
+  <div class="card-body"><span class="card-kicker">Web · Client project</span><h3>Coooki</h3><p>A bilingual Arabic/English home-bakery shop: menu, custom occasion boxes, BenefitPay or cash on delivery, order tracking, and an admin panel the owners run themselves.</p><div class="chips"><span class="chip">TanStack Start</span><span class="chip">React 19</span><span class="chip">Supabase</span><span class="chip">Tailwind</span></div><div class="card-links"><a href="https://cookiesbh.vercel.app" target="_blank" rel="noopener">Live ↗</a><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/veloura.jpg" alt="Veloura screenshot" loading="lazy"><span class="status">Live</span><span class="cover-spec">velourabh.com</span></div>
+  <div class="card-body"><span class="card-kicker">Web · Client project</span><h3>Veloura</h3><p>A luxury perfume store for a Bahraini start-up. The owners edit every text and photo by clicking on the site. Typed tRPC API, Argon2, CSRF guard, rate limits and 35 integration tests.</p><div class="chips"><span class="chip">React</span><span class="chip">tRPC</span><span class="chip">Express</span><span class="chip">PostgreSQL</span><span class="chip">Drizzle</span><span class="chip">Docker</span></div><div class="card-links"><a href="https://velourabh.com" target="_blank" rel="noopener">Live ↗</a><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/friday.jpg" alt="Friday screenshot" loading="lazy"><span class="status">In daily use</span><span class="cover-spec">voice · HUD · 3 AI providers</span></div>
+  <div class="card-body"><span class="card-kicker">AI assistant</span><h3>Friday</h3><p>A voice-first personal assistant with a sci-fi HUD. A wake word, spoken replies, memory, GitHub tools and browser control, with automatic fallback across Gemini, Claude and Groq.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">Express</span><span class="chip">Gemini</span><span class="chip">Claude</span><span class="chip">Groq</span><span class="chip">Supabase</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/ri7la.jpg" alt="Ri7la screenshot" loading="lazy"><span class="status wip">In progress</span><span class="cover-spec">RTL · K-3</span></div>
+  <div class="card-body"><span class="card-kicker">EdTech · Arabic first</span><h3>Ri7la</h3><p>A gamified learning platform for grades 1–3 in Bahrain. Subjects, progress reports, tutor booking, and a 3-Mistake Rule that alerts parents and generates an AI review quiz.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">Express</span><span class="chip">Supabase</span><span class="chip">Stripe Connect</span><span class="chip">OpenAI</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
   <div class="cover" style="--h:190"><span class="cover-glyph">▦</span><span class="status">Shipped</span><span class="cover-spec">3 repos · full stack</span></div>
   <div class="card-body"><span class="card-kicker">Web · Internship</span><h3>Esbitar Dashboard</h3><p>The clinic-side web dashboard for Esbitar, built in Next.js on top of a Node.js/Express and Supabase API I contributed to across three repositories.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Supabase</span></div></div>
 </article><article class="card" data-tilt="7">
   <div class="cover" style="--h:210"><span class="cover-glyph">◎</span><span class="status">Shipped</span><span class="cover-spec">ordering · providers</span></div>
   <div class="card-body"><span class="card-kicker">Web · Exceeders</span><h3>Laundry Marketplace</h3><p>A marketplace connecting customers with laundry services, built during my time at Exceeders.</p><div class="chips"><span class="chip">Full stack</span><span class="chip">Marketplace</span></div></div>
 </article><article class="card" data-tilt="7">
-  <div class="cover" style="--h:150"><span class="cover-glyph">#</span><span class="status">Shipped</span><span class="cover-spec">live chat · sessions</span></div>
-  <div class="card-body"><span class="card-kicker">Web · Reboot</span><h3>Real-Time Forum</h3><p>A single-page forum with live private messaging. Go handles the server and WebSocket hub; SQLite stores users, posts and chats.</p><div class="chips"><span class="chip">Go</span><span class="chip">WebSockets</span><span class="chip">SQLite</span><span class="chip">JavaScript</span></div></div>
+  <div class="cover" style="--h:150"><img class="cover-img" src="images/projects/real-time-forum.jpg" alt="screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">live chat · sessions</span></div>
+  <div class="card-body"><span class="card-kicker">Web · Reboot</span><h3>Real-Time Forum</h3><p>A single-page forum with live private messaging. Go handles the server and WebSocket hub; SQLite stores users, posts and chats.</p><div class="chips"><span class="chip">Go</span><span class="chip">WebSockets</span><span class="chip">SQLite</span><span class="chip">JavaScript</span></div><div class="card-links"><span>Private repo</span></div></div>
 </article><article class="card" data-tilt="7">
   <div class="cover" style="--h:260"><span class="cover-glyph">@</span><span class="status">Shipped</span><span class="cover-spec">groups · events · chat</span></div>
   <div class="card-body"><span class="card-kicker">Web · Reboot</span><h3>Social Network</h3><p>A social platform with profiles, followers, groups, events and real-time chat, shipped as containers with Docker.</p><div class="chips"><span class="chip">Go</span><span class="chip">SQLite</span><span class="chip">WebSockets</span><span class="chip">Docker</span></div></div>
 </article><article class="card" data-tilt="7">
-  <div class="cover" style="--h:300"><span class="cover-glyph">{ }</span><span class="status">Shipped</span><span class="cover-spec">auth · data viz</span></div>
-  <div class="card-body"><span class="card-kicker">Web · Reboot</span><h3>GraphQL Profile</h3><p>A personal stats page that signs in with JWT, queries a GraphQL API and draws progress as hand-built SVG graphs.</p><div class="chips"><span class="chip">GraphQL</span><span class="chip">JWT</span><span class="chip">SVG</span></div></div>
+  <div class="cover" style="--h:300"><img class="cover-img" src="images/projects/graphql.jpg" alt="screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">auth · data viz</span></div>
+  <div class="card-body"><span class="card-kicker">Web · Reboot</span><h3>GraphQL Profile</h3><p>A personal stats page that signs in with JWT, queries a GraphQL API and draws progress as hand-built SVG graphs.</p><div class="chips"><span class="chip">GraphQL</span><span class="chip">JWT</span><span class="chip">SVG</span></div><div class="card-links"><a href="https://graph-ql-coral-eta.vercel.app" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/hx03s/GraphQL" target="_blank" rel="noopener">Code ↗</a></div></div>
 </article><article class="card" data-tilt="7">
   <div class="cover" style="--h:280"><span class="cover-glyph">↗</span><span class="status">Shipped</span><span class="cover-spec">BH → GCC → ME → World</span></div>
   <div class="card-body"><span class="card-kicker">Data viz</span><h3>Market Expansion Roadmap</h3><p>A combined bar and line chart mapping phased growth from Bahrain to the GCC, the Middle East, then global, on logarithmic axes with persistent labels.</p><div class="chips"><span class="chip">Chart.js</span><span class="chip">JavaScript</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/le-chocolat.jpg" alt="Le Chocolat screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">5 pages</span></div>
+  <div class="card-body"><span class="card-kicker">Website</span><h3>Le Chocolat</h3><p>A multi-page website for a chocolate and specialty-cake shop in Adliya: home, menu, about, contact and location.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div><div class="card-links"><span>Private repo</span></div></div>
 </article></div>
 </section>
   <section class="cat" id="games">
-  <div class="cat-head"><h2>Games <small>04</small></h2><p>Party games for the living room and real-time games in Rust.</p></div>
-  <div class="grid two"><article class="card" data-tilt="7">
+  <div class="cat-head"><h2>Games <small>12</small></h2><p>Party games for the living room, online co-op and real-time games.</p></div>
+  <div class="grid"><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/hull-breach.jpg" alt="Hull Breach screenshot" loading="lazy"><span class="status">Released</span><span class="cover-spec">team of 3 · Reboot01</span></div>
+  <div class="card-body"><span class="card-kicker">Online co-op · Unity</span><h3>Hull Breach</h3><p>A two-player game about keeping a broken spaceship alive. Each player can only solve their puzzles with the manual the other holds, and at the end there's one escape pod with one seat.</p><div class="chips"><span class="chip">Unity 6</span><span class="chip">C#</span><span class="chip">Netcode</span><span class="chip">Unity Relay</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/karak-rush.jpg" alt="Karak Rush screenshot" loading="lazy"><span class="status">Live</span><span class="cover-spec">12 levels · offline</span></div>
+  <div class="card-body"><span class="card-kicker">Cooking game</span><h3>Karak Rush</h3><p>A time-management game at a karak stall in Bahrain. Brew karak, fry samosa and serve customers before they walk away, across 12 levels with prices in fils.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">Web Audio</span><span class="chip">PWA</span></div><div class="card-links"><a href="https://karak-rush.vercel.app" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/hx03s/karak-rush" target="_blank" rel="noopener">Code ↗</a></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/stop.jpg" alt="Stop! · ستوب screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">2–12 players · peer-to-peer</span></div>
+  <div class="card-body"><span class="card-kicker">Party game</span><h3>Stop! · ستوب</h3><p>The Arabic paper game اسم حيوان جماد, online. Friends join from their phones over WebRTC with no server, then vote on each other's answers.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">WebRTC</span><span class="chip">Framer Motion</span><span class="chip">Playwright</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/lane-dash.jpg" alt="Lane Dash screenshot" loading="lazy"><span class="status">Live</span><span class="cover-spec">solo · online · daily</span></div>
+  <div class="card-body"><span class="card-kicker">Mobile web game</span><h3>Lane Dash</h3><p>A swimming-pool runner. Dodge kickboards, grab medals, and race a friend on their own phone with a seeded course that's the same on both.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">Canvas</span><span class="chip">PeerJS</span></div><div class="card-links"><a href="https://lane-dash-eight.vercel.app" target="_blank" rel="noopener">Live ↗</a><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
   <div class="cover" style="--h:22"><span class="cover-glyph ar" lang="ar">بيتنا</span><span class="status wip">In progress</span><span class="cover-spec">shared display · Arabic first</span></div>
   <div class="card-body"><span class="card-kicker">Party game hub</span><h3>Baytna</h3><p>A multiplayer party game hub for family and friend gatherings on one shared screen. Rooms, sessions and players share one model, with each game plugging into a common interface.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">Supabase Realtime</span><span class="chip">TypeScript</span></div></div>
 </article><article class="card" data-tilt="7">
   <div class="cover" style="--h:350"><span class="cover-glyph ar" lang="ar">س ج</span><span class="status wip">In progress</span><span class="cover-spec">dual timer · lifelines</span></div>
   <div class="card-body"><span class="card-kicker">Trivia game</span><h3>Seen Jeem</h3><p>A competitive Arabic trivia game. The backend covers auth, a question elimination engine, a dual-timer state machine and validated lifelines.</p><div class="chips"><span class="chip">Node.js</span><span class="chip">State machines</span><span class="chip">Auth</span></div></div>
 </article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/bomberman.jpg" alt="Bomberman DOM screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">2–4 players · 60 FPS</span></div>
+  <div class="card-body"><span class="card-kicker">Multiplayer · Reboot</span><h3>Bomberman DOM</h3><p>Four-player Bomberman with chat, power-ups and three lives, running at 60 FPS on a mini-framework I wrote: virtual DOM, router, store and events.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">WebSockets</span><span class="chip">Node.js</span></div><div class="card-links"><a href="https://github.com/hx03s/bomberman-dom" target="_blank" rel="noopener">Code ↗</a></div></div>
+</article><article class="card" data-tilt="7">
   <div class="cover" style="--h:120"><span class="cover-glyph">▚</span><span class="status">Shipped</span><span class="cover-spec">~1,100 LOC · 50+ FPS target</span></div>
   <div class="card-body"><span class="card-kicker">Multiplayer FPS</span><h3>Maze Wars</h3><p>A first-person maze shooter in Rust. A UDP server syncs players, the client renders with a mini-map and FPS counter, and mazes generate across three difficulty levels.</p><div class="chips"><span class="chip">Rust</span><span class="chip">UDP</span><span class="chip">Game loop</span></div></div>
 </article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/jawbreaker.jpg" alt="Jawbreaker screenshot" loading="lazy"><span class="status">Live</span><span class="cover-spec">global top 5</span></div>
+  <div class="card-body"><span class="card-kicker">Arcade remake</span><h3>Jawbreaker</h3><p>The 1981 lane-maze arcade game, rebuilt for the browser with keyboard, touch and gamepad controls and a global high-score table.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">Canvas</span><span class="chip">Neon Postgres</span></div><div class="card-links"><a href="https://jawbreaker.vercel.app" target="_blank" rel="noopener">Live ↗</a><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/guess-who.jpg" alt="Guess Who: Anime screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">2 players</span></div>
+  <div class="card-body"><span class="card-kicker">Multiplayer</span><h3>Guess Who: Anime</h3><p>The classic guessing game, online, with 20 anime characters, matchmaking, yes/no questions and live chat.</p><div class="chips"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Socket.IO</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
   <div class="cover" style="--h:60"><span class="cover-glyph">▤</span><span class="status">Shipped</span><span class="cover-spec">grid AI · audited</span></div>
   <div class="card-body"><span class="card-kicker">AI bot</span><h3>Filler</h3><p>A Rust bot for a two-player territory game. It reads the grid each turn, places pieces to claim space, and must beat the reference robots on several maps inside Docker.</p><div class="chips"><span class="chip">Rust</span><span class="chip">Algorithms</span><span class="chip">Docker</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/tetris.jpg" alt="Tetris screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">no canvas</span></div>
+  <div class="card-body"><span class="card-kicker">DOM game · Reboot</span><h3>Tetris</h3><p>Tetris built from plain divs, with a next-piece preview, a three-minute timer, three lives and a running score.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span></div><div class="card-links"><span>Private repo</span></div></div>
 </article></div>
 </section>
   <section class="cat" id="tools">
-  <div class="cat-head"><h2>Tools & research <small>03</small></h2><p>Command-line tools, graphics and security research.</p></div>
+  <div class="cat-head"><h2>Tools & research <small>07</small></h2><p>Command-line tools, algorithms, desktop apps, graphics and security research.</p></div>
   <div class="grid"><article class="card" data-tilt="7">
   <div class="cover" style="--h:200"><span class="cover-glyph">↓</span><span class="status">Shipped</span><span class="cover-spec">mirror · rate limit</span></div>
   <div class="card-body"><span class="card-kicker">CLI tool</span><h3>wget in Go</h3><p>A clone of Unix wget with batch downloads, rate limiting, live progress bars and full-site mirroring using a BFS crawler that rewrites links for offline use.</p><div class="chips"><span class="chip">Go</span><span class="chip">HTTP</span><span class="chip">Concurrency</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/lem-in.jpg" alt="Lem-in screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">path finding</span></div>
+  <div class="card-body"><span class="card-kicker">Algorithm · Reboot</span><h3>Lem-in</h3><p>A digital ant farm: find the set of paths that moves every ant from start to end in the fewest turns, and print every move.</p><div class="chips"><span class="chip">Go</span><span class="chip">Graphs</span><span class="chip">BFS</span></div><div class="card-links"><a href="https://github.com/hx03s/lem-in" target="_blank" rel="noopener">Code ↗</a></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/groupie-tracker-filters.jpg" alt="Groupie Tracker screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">filters · search</span></div>
+  <div class="card-body"><span class="card-kicker">Web app · Reboot</span><h3>Groupie Tracker</h3><p>Browse bands, members and concert dates from a REST API, with filters and search suggestions.</p><div class="chips"><span class="chip">Go</span><span class="chip">html/template</span><span class="chip">REST</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/go-reloaded.jpg" alt="go-reloaded screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">file in, file out</span></div>
+  <div class="card-body"><span class="card-kicker">CLI tool</span><h3>go-reloaded</h3><p>A text auto-corrector: converts hex and binary, fixes case, punctuation, quotes and a/an across a whole file.</p><div class="chips"><span class="chip">Go</span><span class="chip">Regex</span></div><div class="card-links"><a href="https://github.com/hx03s/go-reloaded" target="_blank" rel="noopener">Code ↗</a></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/programming-advance.jpg" alt="Equipment Rental screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">12 tables</span></div>
+  <div class="card-body"><span class="card-kicker">Desktop app · University</span><h3>Equipment Rental</h3><p>A Windows app for renting out equipment: roles, requests, transactions, returns, feedback, notifications and logs.</p><div class="chips"><span class="chip">C#</span><span class="chip">WinForms</span><span class="chip">SQL Server</span></div><div class="card-links"><span>Private repo</span></div></div>
 </article><article class="card" data-tilt="7">
   <div class="cover" style="--h:40"><span class="cover-glyph">◐</span><span class="status wip">In progress</span><span class="cover-spec">rays · shading</span></div>
   <div class="card-body"><span class="card-kicker">Graphics</span><h3>rt Ray Tracer</h3><p>A ray tracer written from scratch in Rust, growing from a single sphere toward planes, cubes, cylinders, a movable camera and multi-object scenes.</p><div class="chips"><span class="chip">Rust</span><span class="chip">Math</span><span class="chip">Rendering</span></div></div>
 </article><article class="card" data-tilt="7">
   <div class="cover" style="--h:330"><span class="cover-glyph">⌁</span><span class="status">Shipped</span><span class="cover-spec">CICIDS2017 · Bot-IoT</span></div>
   <div class="card-body"><span class="card-kicker">ML research</span><h3>IoT Intrusion Detection</h3><p>Research comparing Random Forest and Decision Tree classifiers on the CICIDS2017 and Bot-IoT datasets, with metrics recomputed from confusion matrices.</p><div class="chips"><span class="chip">Machine learning</span><span class="chip">Security</span></div></div>
+</article></div>
+</section>
+  <section class="cat" id="coursework">
+  <div class="cat-head"><h2>Coursework & practice <small>07</small></h2><p>Exam practice and university labs.</p></div>
+  <div class="grid"><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/rust-rev.jpg" alt="Rust Exam screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">4 levels</span></div>
+  <div class="card-body"><span class="card-kicker">Practice</span><h3>Rust Exam</h3><p>Solutions to the Rust piscine exam: primes, Lucas numbers, matrix determinants, ownership and more.</p><div class="chips"><span class="chip">Rust</span><span class="chip">Cargo</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/java-checkpoints.jpg" alt="Java Checkpoints screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">8 exercises</span></div>
+  <div class="card-body"><span class="card-kicker">Practice</span><h3>Java Checkpoints</h3><p>Checkpoint exercises in Java: primes, sorting, unit conversion and small classes.</p><div class="chips"><span class="chip">Java</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/programming-2.jpg" alt="Programming 2 screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">labs</span></div>
+  <div class="card-body"><span class="card-kicker">University · Java</span><h3>Programming 2</h3><p>Lab work: an ATM simulator, classes and objects, and an employee database manager.</p><div class="chips"><span class="chip">Java</span><span class="chip">Maven</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/math-skills.jpg" alt="math-skills screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">stats</span></div>
+  <div class="card-body"><span class="card-kicker">Statistics</span><h3>math-skills</h3><p>Reads a dataset and prints its average, median, variance and standard deviation.</p><div class="chips"><span class="chip">Python</span></div><div class="card-links"><a href="https://github.com/hx03s/math-skills" target="_blank" rel="noopener">Code ↗</a></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/game-development.jpg" alt="Unity Maze screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">3D</span></div>
+  <div class="card-body"><span class="card-kicker">University · Unity</span><h3>Unity Maze</h3><p>An early Unity 3D project: a maze built from a grid by script, inside a terrain with a villa and village houses.</p><div class="chips"><span class="chip">Unity</span><span class="chip">C#</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/mobile-programming.jpg" alt="iOS Basics screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">Xcode</span></div>
+  <div class="card-body"><span class="card-kicker">University · Swift</span><h3>iOS Basics</h3><p>The base iOS project for my mobile programming course, with UIKit, storyboards and tests.</p><div class="chips"><span class="chip">Swift</span><span class="chip">UIKit</span></div><div class="card-links"><span>Private repo</span></div></div>
+</article><article class="card" data-tilt="7">
+  <div class="cover" style="--h:180"><img class="cover-img" src="images/projects/foosball.jpg" alt="Foosball Tracker screenshot" loading="lazy"><span class="status">Shipped</span><span class="cover-spec">3 modes</span></div>
+  <div class="card-body"><span class="card-kicker">Website</span><h3>Foosball Tracker</h3><p>Track foosball games between friends: 1v1, 2v2 and tournaments.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div><div class="card-links"><span>Private repo</span></div></div>
 </article></div>
 </section>
 </div>

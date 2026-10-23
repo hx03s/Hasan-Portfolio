@@ -28,6 +28,10 @@
 - Bricolage Grotesque, Hanken Grotesk and JetBrains Mono for type, with Noto Kufi Arabic for Arabic text
 - Deployed on Vercel as a static site
 
+## Your photo
+
+Put your photo in `images/` as `me.jpg`. The path is set in `app.js` (`CONFIG.photo`). Until the file exists, the "H" monogram shows instead.
+
 ## Run locally
 
 ```bash
