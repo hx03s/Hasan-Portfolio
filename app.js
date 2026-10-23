@@ -196,6 +196,42 @@ ${d.get("from")}`;
 
   document.querySelectorAll("[data-year]").forEach(el => { el.textContent = new Date().getFullYear(); });
 
+  /* ---- play games in an overlay ---- */
+  const playable = document.querySelectorAll(".card[data-play]");
+  if (playable.length) {
+    const box = document.createElement("div");
+    box.className = "player"; box.hidden = true;
+    box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true");
+    box.innerHTML = '<div class="player-bar"><b class="player-title"></b>' +
+      '<a class="player-open" target="_blank" rel="noopener">New tab ↗</a>' +
+      '<button class="player-close" type="button" aria-label="Close game">Close ✕</button></div>' +
+      '<iframe class="player-frame" allow="autoplay; fullscreen; gamepad; clipboard-write" allowfullscreen></iframe>';
+    document.body.appendChild(box);
+    const frame = box.querySelector("iframe");
+    let opener = null;
+    const close = () => {
+      box.hidden = true; frame.src = "about:blank";
+      document.documentElement.classList.remove("playing");
+      if (opener) opener.focus();
+    };
+    const open = (card, from) => {
+      opener = from;
+      box.querySelector(".player-title").textContent = card.dataset.game;
+      box.querySelector(".player-open").href = card.dataset.play;
+      box.setAttribute("aria-label", card.dataset.game);
+      frame.title = card.dataset.game;
+      frame.src = card.dataset.play;
+      box.hidden = false;
+      document.documentElement.classList.add("playing");
+      frame.addEventListener("load", () => frame.focus(), { once: true });
+    };
+    playable.forEach(card => {
+      card.querySelectorAll(".play-btn, .play-link").forEach(b => b.addEventListener("click", () => open(card, b)));
+    });
+    box.querySelector(".player-close").addEventListener("click", close);
+    document.addEventListener("keydown", e => { if (e.key === "Escape" && !box.hidden) close(); });
+  }
+
   /* helpers */
   function copyText(text, fallbackEl, msg) {
     const done = () => toast(msg);

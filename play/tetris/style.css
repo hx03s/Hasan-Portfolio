@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(0deg, #6139a5 0%, #4570df 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.gamebox {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 500px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-and-mini-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 24px;
+    color: white;
+    margin-right: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin: 5px 0;
+    width: 100%;
+}
+
+.options button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3e5eba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options button:hover {
+    background-color: #4570df;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.grid {
+    width: 240px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    background: repeating-linear-gradient(rgba(22, 28, 67, 0.8), rgba(22, 28, 67, 0.8) 20px, rgba(23, 27, 63, 0.8) 20px, rgba(23, 27, 63, 0.8) 40px),
+        repeating-linear-gradient(90deg, rgba(22, 28, 67, 0.8), rgba(22, 28, 67, 0.8) 20px, rgba(23, 27, 63, 0.8) 20px, rgba(23, 27, 63, 0.8) 40px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border: 5px solid #3e5eba;
+}
+
+.grid div {
+    height: 24px;
+    width: 24px;
+}
+
+.tetromino {
+    /* border: 1px solid black; */
+    box-shadow: inset 3px 3px 0 rgba(255, 255, 255, 0.5);
+}
+
+.mini-grid {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(22, 28, 67, 0.8);
+    box-shadow: 0 0 0 1px #3e5eba;
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+}
+
+h3,
+#score {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.game-over-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.game-over-message h2 {
+    margin-bottom: 10px;
+}

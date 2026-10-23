@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="docs/preview.jpg" alt="Hasan · Portfolio (v1)" width="100%">
+<img src="docs/preview.jpg" alt="Hasan Abdulla · Portfolio" width="100%">
 
-# Hasan · Portfolio (v1)
+# Hasan Abdulla · Portfolio
 
 **My first portfolio site: hand-written HTML, CSS and JavaScript with an animated canvas background.**
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript"> <img src="https://img.shields.io/badge/Canvas-333333?style=for-the-badge" alt="Canvas"> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
 
-[**Visit the site**](https://hasan-portfolio-six.vercel.app)
+[**Visit the site**](https://hasanabdulla.vercel.app)
 
 </div>
 
