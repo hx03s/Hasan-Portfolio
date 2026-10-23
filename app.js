@@ -3,7 +3,7 @@ const CONFIG = {
   // YOUR PHOTO: put your photo in the `images` folder as `me.jpg` (or change the path here).
   // A portrait (about 4:5) looks best. Until the file exists, the "H" monogram shows instead.
   photo: "images/me.jpg",
-  email: "habdulla2903@gmail.com",
+  email: "hassanabdulla102@gmail.com",
   github: "https://github.com/hx03s",
   linkedin: ""          // e.g. "https://www.linkedin.com/in/your-handle"
 };
